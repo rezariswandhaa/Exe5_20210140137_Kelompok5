@@ -39,10 +39,15 @@ namespace Exe5_20210140137_Kelompok5
         }
         public void delete()
         {
-
+            if (reza == null)
+            {
+                Console.WriteLine("Queue is Empty!");
+                return;
+            }
+            reza = reza.next;
+            if(reza == null)
+                riswandha = null; 
         }
-        
-
 
     }
 
