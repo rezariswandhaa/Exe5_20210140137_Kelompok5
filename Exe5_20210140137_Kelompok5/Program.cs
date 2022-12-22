@@ -14,6 +14,12 @@ namespace Exe5_20210140137_Kelompok5
 
     class queue
     {
+        Node reza, riswandha;
+        public queue()
+        {
+            reza = null;
+            riswandha = null;
+        }
         
 
 
