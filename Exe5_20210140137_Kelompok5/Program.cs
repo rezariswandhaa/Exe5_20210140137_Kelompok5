@@ -37,6 +37,10 @@ namespace Exe5_20210140137_Kelompok5
             reza.next = newnode;
             reza = newnode;
         }
+        public void delete()
+        {
+
+        }
         
 
 
