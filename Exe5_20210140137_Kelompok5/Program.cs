@@ -48,6 +48,10 @@ namespace Exe5_20210140137_Kelompok5
             if(reza == null)
                 riswandha = null; 
         }
+        public void display()
+        {
+
+        }
 
     }
 
