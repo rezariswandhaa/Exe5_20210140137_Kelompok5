@@ -50,7 +50,14 @@ namespace Exe5_20210140137_Kelompok5
         }
         public void display()
         {
-
+            if (reza == null)
+            {
+                Console.WriteLine("Queue is Empty!");
+                return ;
+            }
+            Node display;
+            for (display = reza; display != null; display = display.next)
+                Console.WriteLine(display.nama);
         }
 
     }
