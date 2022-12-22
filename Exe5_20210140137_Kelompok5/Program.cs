@@ -20,6 +20,23 @@ namespace Exe5_20210140137_Kelompok5
             reza = null;
             riswandha = null;
         }
+        public void insert()
+        {
+            string nm;
+            Node newnode = new Node();
+            Console.WriteLine("Masukan Element: ");
+            nm = Console.ReadLine();
+            newnode.nama = nm;
+            newnode.next = null;  
+            if (reza == null)
+            {
+                reza = newnode;
+                riswandha = newnode;
+                return;
+            }
+            reza.next = newnode;
+            reza = newnode;
+        }
         
 
 
