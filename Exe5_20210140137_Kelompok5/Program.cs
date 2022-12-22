@@ -62,11 +62,47 @@ namespace Exe5_20210140137_Kelompok5
 
     }
 
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-
+            queue q = new queue();
+            char ch;
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine(" Menu ");
+                    Console.WriteLine("1. Insert");
+                    Console.WriteLine("2. Delete");
+                    Console.WriteLine("3. Display");
+                    Console.WriteLine("4. Exit");
+                    Console.Write("\nEnter your choice: ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            q.insert();
+                            break;
+                        case '2':
+                            q.delete();
+                            break;
+                        case '3':
+                            q.display();
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            Console.WriteLine("Invalid option");
+                            break;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the values entered. ");
+                }
+            }
         }
     }
 }
